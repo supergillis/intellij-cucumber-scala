@@ -9,6 +9,8 @@ sourceCompatibility = 1.8
 
 dependencies {
   implementation libs.scala
+
+  testCompile libs.jUnit
 }
 
 intellij {

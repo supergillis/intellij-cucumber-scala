@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.github.danielwegener'
-version "${versions.idea}"
+version "${versions.plugin}"
 sourceCompatibility = 1.8
 
 dependencies {
@@ -15,9 +15,10 @@ dependencies {
 
 intellij {
   pluginName 'intellij-cucumber-scala'
-  version "IC-${versions.idea}"
+  version "${versions.idea}"
 
   plugins = [
+    "java",
     "cucumber-java:${versions.cucumber}",
     "gherkin:${versions.gherkin}",
     "org.intellij.scala:${versions.scalaPlugin}"
